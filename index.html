@@ -3,157 +3,480 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>The Ethical Implant</title>
+<title>index</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Ethical Implant.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The Ethical Implant" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="BFB0976E-6006-4AA6-8E98-8F3458492000" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="325,450" size="100,100">:: Info Page
-&lt;h1&gt;CIS 485: The Ethical Implant&lt;/h1&gt;
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play index.</tw-noscript></noscript></tw-story>
+<tw-storydata name="index" startnode="5" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="597FDAC5-56F5-47E3-90DD-3BC35341A251" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Dev Step 1" tags="" position="475,225" size="100,100">
+&#39;&#39;Developer Introduction&#39;&#39;
 
-<img src="alert.gif"
-     alt="Corazón Device Alert Animation"
-     style="max-width:420px; display:block; margin:20px auto; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.3);">
-     
-&lt;p&gt;In this journey, you are about to make a series of decisions that will challenge your knowledge around ethics. This interactive case study is based on the &lt;strong&gt;Medical Implant Risk Analysis&lt;/strong&gt; from the ACM Code of Ethics.&lt;/p&gt;
+You are &#39;&#39;&#39;Jayne Fraser&#39;&#39;&#39;, a security engineer at Corazón. During your morning review, a new high-priority report appears in your inbox. A researcher claims they’ve found a predictable wireless pattern in the implant’s communication — something that could allow an attacker to force the device to &#39;&#39;&#39;reset&#39;&#39;&#39;.
 
-&lt;p&gt;While you progress, you’ll face relevant, real world decisions that assess your professional integrity. &lt;/p&gt;
+The researcher says the risk is “low,” but you know that even a small flaw can matter when it lives inside a patient’s body. This could become serious if handled poorly.
 
-&lt;div style=&quot;border-left: 4px solid #ff9f1c; padding-left: 10px; margin: 15px 0;&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;Team Members:&lt;/strong&gt; Anisa Quintyne, Surbhi, Guneet Bakshi, Gursagar Chahal, Harsh Arora&lt;/p&gt;
+You need to decide your first step.
+
+&#39;&#39;&#39;What is your immediate response?&#39;&#39;&#39;
+
+• [[Forward the report immediately to the incident-response team.|Dev Report Immediately]]  
+• [[Verify the issue yourself before escalating.|Dev Verify First]]  
+• [[Call your manager and raise it as a patient-safety concern.|Dev Call Manager]]
+
+</tw-passagedata><tw-passagedata pid="2" name="Dev Step 2" tags="" position="725,225" size="100,100">&#39;&#39;Step 2: Emergency Meeting&#39;&#39;
+
+The vulnerability is confirmed. Multiple implant generations rely on the same hard-coded initialization value, making the device’s wireless behavior partially predictable. An emergency meeting is called.
+
+Firmware engineers, security specialists, regulatory staff, legal counsel, and PR all gather around the table. The room feels tense; everyone understands that any flaw in a medical implant can become a human-safety issue.
+
+The firmware team explains the situation plainly:
+
+- The bug can only be fixed through a **firmware update**.  
+- Newer implants can receive the fix remotely through the mobile app.  
+- Older devices require in-clinic updates.  
+- A small number of patients may even need surgical replacement.
+
+A safe, fully verified patch is estimated to take at least **six weeks**, if no issues appear during testing.
+
+The discussion quiets. Everyone turns to you — the engineer who understands the technical implications best.  
+Your assessment will guide how urgently Corazón responds, how resources are assigned, and when regulators and patients are informed.
+
+**How do you frame the situation?**
+
+• [[Treat it as a high-priority safety concern that demands immediate action.|Dev Frame High Priority]]  
+• [[Present it as a low-likelihood technical issue manageable in the normal release pipeline.|Dev Frame Low Priority]]  
+
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Dev Step 3" tags="" position="900,225" size="100,100">&#39;&#39;Step 3: Regulators and Patients&#39;&#39;
+
+Your classification sets the tone. If you called the flaw safety-critical, regulatory bodies expect rapid, transparent updates. If you described it as low risk or uncertain, Corazón has more room to decide how and when to disclose what they know—but also takes on more moral responsibility if any harm occurs.
+
+As patch planning begins, another challenging question emerges: **who should be informed first, and how much detail should they receive?** Draft messages circulate internally:
+
+One draft carefully downplays likelihood, using dense technical language. Another explains the vulnerability in straightforward terms and encourages patients to contact their doctors. A third suggests informing **clinicians and hospitals first**, giving them time to prepare before patients see any public notice.
+
+You realize that beyond the technical fix, this is also a decision about **respecting patients’ autonomy** and right to know versus managing fear and confusion.
+
+**Whose hands should this information reach first?**
+
+• [[Notify patients directly through app alerts and mailed notices.|Dev Notify Patients]]  
+• [[Inform clinics and physicians first so they can prepare.|Dev Notify Clinics]]  
+• [[Limit early communication to regulators and internal staff until the patch is nearly ready.|Dev Wait To Notify]]
+</tw-passagedata><tw-passagedata pid="4" name="Hack Step 1" tags="" position="75,925" size="100,100">&#39;&#39;Hacker Introduction&#39;&#39;
+
+You are &#39;&#39;&#39;Johnny Brown&#39;&#39;&#39;, an independent security researcher who investigates medical device protocols.  
+While analyzing Corazón’s implant wireless handshake, you discover a repeating initialization pattern.  
+After a few tests, you craft a proof-of-concept that can force an implant to reset from close range.
+
+It isn’t catastrophic on its own—but in the wrong hands, it could create panic or cause real harm.
+
+You face your first decision:
+
+
+
+• [[Prepare a responsible disclosure report for Corazón.|Hack Responsible Start]]  
+• [[Develop a full exploit to understand the vulnerability’s true power.|Hack Build PoC]]  
+• [[Discuss the flaw informally with other researchers and hackers.|Hack Talk Informally]]
+</tw-passagedata><tw-passagedata pid="5" name="Start" tags="" position="200,175" size="100,100">:: Info Page
+&lt;h1 style=&quot;margin-bottom: 8px;&quot;&gt;CIS 485: The Ethical Implant&lt;/h1&gt;
+
+&lt;div style=&quot;border-left: 4px solid #ff9f1c; padding-left: 8px; margin: 12px 0;&quot;&gt;
+  &lt;p style=&quot;margin: 4px 0;&quot;&gt;&lt;strong&gt;Team Members (Group 5):&lt;/strong&gt;&lt;/p&gt;
+  &lt;ul style=&quot;margin: 0; padding-left: 18px;&quot;&gt;
+    &lt;li style=&quot;margin: 2px 0;&quot;&gt;&lt;strong&gt;Project Manager:&lt;/strong&gt; Anisa Quintyne&lt;/li&gt;
+    &lt;li style=&quot;margin: 2px 0;&quot;&gt;&lt;strong&gt;Research &amp; Lead Writer:&lt;/strong&gt; Surbhi&lt;/li&gt;
+    &lt;li style=&quot;margin: 2px 0;&quot;&gt;&lt;strong&gt;Documentation Lead:&lt;/strong&gt; Guneet Bakshi&lt;/li&gt;
+    &lt;li style=&quot;margin: 2px 0;&quot;&gt;&lt;strong&gt;Quality Assurance:&lt;/strong&gt; Gursagar Chahal&lt;/li&gt;
+    &lt;li style=&quot;margin: 2px 0;&quot;&gt;&lt;strong&gt;Graphics Designer:&lt;/strong&gt; Harsh Arora&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Make ethical choices and reflect on how each aligns with the ACM Code of Ethics.&lt;/p&gt;
+&lt;p style=&quot;margin: 6px 0;&quot;&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Make ethical choices and reflect on how each aligns with the ACM Code of Ethics.&lt;/p&gt;
 
-&lt;p style=&quot;margin-top:20px;&quot;&gt;[[Begin-&gt;Decision: Choose your role]]&lt;/p&gt;
-</tw-passagedata><tw-passagedata pid="2" name="Decision: Choose your role" tags="decision" position="525,450" size="100,100">
-Decision: Choose your role! Will you play as a Developer, or as a Hacker?
+&lt;p style=&quot;margin: 6px 0;&quot;&gt;Click below to learn more about the company:&lt;/p&gt;
 
-[[Play as Developer-&gt;Developer Process]]
-[[Play as Hacker-&gt;Hacker Process]]
-</tw-passagedata><tw-passagedata pid="3" name="Developer Process" tags="process" position="725,400" size="100,100">
-Developer Process:
-You are a developer for Corazón. Your task is to analyze data exposure risk. You inspect logs, while reproducing the issue and estimating impact.
+[[About the Company-&gt;Introduction]]
+</tw-passagedata><tw-passagedata pid="6" name="Introduction" tags="" position="50,375" size="100,100">&lt;h2 style=&quot;margin-bottom: 8px;&quot;&gt;Welcome to “The Ethical Implant”&lt;/h2&gt;
+&lt;a href=&quot;https://www.acm.org/code-of-ethics/case-studies/medical-implant-risk-analysis&quot; target=&quot;_blank Learn more about the Case Study here:&lt;/a&gt;
 
-[[Proceed to decision (How should you respond?)-&gt;Developer Decision: How should you respond to this flaw?]]
-</tw-passagedata><tw-passagedata pid="4" name="Hacker Process" tags="process" position="725,525" size="100,100">
-Hacker Process:
-You are a hacker targeting Corazón. During your analysis, you discover a critical system vulnerability. This is a flaw that could be used to access data.
+&lt;p&gt;Corazón is a global medical technology company known for its implantable heart-monitoring devices. The implant communicates wirelessly with a smartphone app, helping doctors track patients’ heart rhythms in real time. Thousands of people rely on this system every day—quietly trusting that the technology keeping them alive is safe, secure, and reliable.
 
-[[Proceed to decision (What should you do?)-&gt;Hacker Decision: What should you do with this flaw?]]
-</tw-passagedata><tw-passagedata pid="5" name="Developer Decision: How should you respond to this flaw?" tags="decision" position="925,400" size="120,120">
-Developer Decision: How should you respond to this flaw?
+But recently, a security researcher uncovered a flaw deep inside the implant’s wireless code. A hidden, hard-coded value makes part of the communication predictable. With special equipment and close proximity, someone could potentially force the implant to reset.
+The company insists the risk is low… but when a device sits inside a human body, even a small vulnerability becomes a major ethical dilemma&lt;/p&gt;
 
-[[Report privately to the company-&gt;Process: Report flaws privately to the company]]
-[[Leak publicly to protect users-&gt;Process: Leak flaws publicly to protect users]]
-</tw-passagedata><tw-passagedata pid="6" name="Hacker Decision: What should you do with this flaw?" tags="decision" position="925,525" size="120,120">
-Hacker Decision: What should you do with this flaw?
+&lt;p&gt;In this interactive scenario, will you play as:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;span style=&quot;color: #ffd700;&quot;&gt;&lt;strong&gt;Developer&lt;/strong&gt;&lt;/span&gt;, trying to protect patients while balancing corporate deadlines, regulatory pressure, and incomplete data?&lt;/li&gt;
+  &lt;li&gt;&lt;span style=&quot;color: #ffd700;&quot;&gt;&lt;strong&gt;Hacker&lt;/strong&gt;&lt;/span&gt;, deciding whether to report the flaw privately, warn the public, or risk letting the vulnerability fall into the wrong hands?&lt;/li&gt;
+&lt;/ul&gt;
 
-[[Report to developer responsibly-&gt;Process: Report to the developer responsibly, remaining anonymous]]
-[[Exploit or sell the flaw-&gt;Process: Exploit or sell the flaw]]
-</tw-passagedata><tw-passagedata pid="7" name="Process: Report flaws privately to the company" tags="process" position="1175,400" size="120,120">
-Process: You contact the company/maintainers and provide details privately. You give them time to respond/fix.
+&lt;p&gt;This is a story about choices, consequences, and professional responsibility.
+While you progress, you’ll face real-world decisions that will assess your professional integrity.&lt;/p&gt;
 
-[[Manual operation: Company reviews and fixes flaws-&gt;Manual Operation: Company reviews and fixes flaws]
-</tw-passagedata><tw-passagedata pid="8" name="Manual Operation: Company reviews and fixes flaws" tags="process" position="1375,400" size="140,120">
-Company reviews your report, reproduces the issue, and begins deploying a patch fix.
+**Choose your Role below to dive in.**
 
-[[Output: Flaws fixed; you gain recognition-&gt;Output: Flaws fixed; you gain recognition]]
-</tw-passagedata><tw-passagedata pid="9" name="Output: Flaws fixed; you gain recognition" tags="output" position="1575,400" size="140,120">
-Output: Corazón fixes the vulnerability. You are acknowledged and their systems are safer.
+[[Play as Developer-&gt;Dev Step 1]]
+[[Play as Hacker-&gt;Hack Step 1]]
+</tw-passagedata><tw-passagedata pid="7" name="Dev Report Immediately" tags="" position="225,400" size="100,100">
 
-[[Proceed to Reflection (ACM)-&gt;ACM Reflection (Ethical Success)]]
-</tw-passagedata><tw-passagedata pid="10" name="Process: Leak flaws publicly to protect users" tags="process" position="1175,525" size="140,120">
-Process: You publish the vulnerability details publicly (blog, forum, social media) to warn users.
+You classify the report as **high priority** and escalate it through Corazón’s incident-response system right away. Within minutes, security and firmware leads acknowledge the alert and request an emergency meeting to review the vulnerability.
 
-[[Database: Flaw details shared online-&gt;Database: Flaw details shared online]]
-</tw-passagedata><tw-passagedata pid="11" name="Database: Flaw details shared online" tags="process" position="1375,525" size="140,120">
-Database: The vulnerability details are now public! Users can access them, while attackers can exploit it.
+Your quick action ensures the issue is taken seriously from the start.
 
-[[Cloud: Public learns about the vulnerability-&gt;Cloud: Public learns about the vulnerability]]
-</tw-passagedata><tw-passagedata pid="12" name="Cloud: Public learns about the vulnerability" tags="process" position="1575,525" size="140,120">
-Cloud: The public becomes aware. Corazón feels the pressure, but attackers may also take advantage.
+[[Join the emergency meeting.|Dev Step 2]]
+[[Decline the emergency meeting.|Ending-Ethical Failure]]
+</tw-passagedata><tw-passagedata pid="8" name="Dev Verify First" tags="" position="375,400" size="100,100">
+You decide to double-check the researcher’s claim before escalating.  
+Using their packet logs and setup description, you recreate the test environment in your lab. After a few attempts, you capture the same predictable wireless pattern—and moments later, the implant resets exactly as described.
 
-[[Exception/Error: Company reputation loss or legal issues-&gt;Exception/Error: Company reputation loss or legal issues]]
-</tw-passagedata><tw-passagedata pid="13" name="Exception/Error: Company reputation loss or legal issues" tags="error" position="1775,525" size="160,120">
-Exception/Error: Harm occurs under legal issues. Customers are lost, shareholders pull out. Corazón reacts under pressure.
+The vulnerability is real. And now you have your own proof.
 
-[[Output: Public safe but internal chaos at company-&gt;Output: Public safe but internal chaos at company]]
-</tw-passagedata><tw-passagedata pid="14" name="Output: Public safe but internal chaos at company" tags="output" position="1975,525" size="160,120">
-Output: Users are informed, but the company suffers internally.
+With confirmed evidence, you escalate the issue through Corazón’s incident-response system, attaching your logs and replication steps.
 
-[[Proceed to Reflection (ACM)-&gt;ACM Reflection (Public Leak)]]
-</tw-passagedata><tw-passagedata pid="15" name="Process: Report to the developer responsibly" tags="process" position="1175,650" size="140,120">
-Process: As a hacker, you responsibly disclose the exploit to the developer (like a bug bounty report), with steps to resolve the issue.
+[[Present your findings at the emergency meeting.|Dev Step 2]]
+</tw-passagedata><tw-passagedata pid="9" name="Dev Call Manager" tags="" position="475,600" size="100,100">
+You take a moment to gather your thoughts, then call your manager directly.  
+As soon as they pick up, you explain the researcher’s findings — the predictable wireless pattern, the forced reset, and what it could mean for patients who rely on the implant every day.
 
-[[Output: Collaboration with developer improves system-&gt;Output: Collaboration with developer improves system]]
-<tw-passagedata pid="16" name="Output: Collaboration with developer improves system" tags="output" position="1375,650" size="140,120">
-Output: The developer works with you. The issue is resolved, and the system improves. You may receive recognition, or potentially a bounty.<br>
+Your manager goes quiet for a moment.  
+You can tell they understand the seriousness.
 
-[[View ACM Reflection->ACM Reflection (Ethical Success)]]
-</tw-passagedata>
-</tw-passagedata><tw-passagedata pid="17" name="Process: Exploit or sell the flaw" tags="process" position="1175,750" size="140,120">
-Process: You decide to exploit the vulnerability, selling it to the dark web. The exploit may be traded among criminal forums.
+“This isn’t just a technical bug,” you say. “It could be a patient-safety risk.”
 
-[[Database: Exploit shared on dark web-&gt;Database: Exploit shared on dark web]]
-</tw-passagedata><tw-passagedata pid="18" name="Database: Exploit shared on dark web" tags="process" position="1375,750" size="140,120">
-Database: Exploit details are traded on the dark web; attackers use it against Corazón.
+That’s enough. Your manager instructs you to forward the report immediately and assures you they will escalate it through senior leadership themselves. Within minutes, you receive an invitation to an emergency meeting.
 
-[[Output: Caught exploiting system; lose credibility-&gt;Output: Caught exploiting system; lose credibility]]
-</tw-passagedata><tw-passagedata pid="19" name="Output: Caught exploiting system; lose credibility" tags="error" position="1575,750" size="140,120">
-Output: If detected, you coould potentially face legal consequences.
+[[Attend the emergency meeting with your manager.|Dev Step 2]]
+[[Decline the Emergency Meeting.|Ending-Ethical Failure]] </tw-passagedata><tw-passagedata pid="10" name="Ending-Ethical Failure" tags="" position="325,575" size="100,100">
+You postpone the emergency meeting, expecting to join later.  
+But without your technical explanation, the team underestimates the seriousness of the flaw. They assume it’s low-impact and decide to “monitor the situation” instead of acting immediately.
 
-[[Proceed to Reflection (ACM)-&gt;ACM Reflection (Exploit Failure)]]
-</tw-passagedata><tw-passagedata pid="20" name="ACM Reflection (Ethical Success)" tags="reflection" position="1775,400" size="160,140">
-Merge: Reflect on what you did against ethical principles (ACM):
- - Avoid harm
- - Be honest and fair
- - Contribute to society
+Two days later, a patient reports an unexpected implant reset.  
+The incident spreads quickly on social media.  
+Regulators demand answers, and internal teams scramble to understand why the vulnerability wasn’t addressed sooner.
 
-You (Developer/Hacker) followed a path that contributed to fixing the issue while responsbly protecting users.
+Leadership is concerned that your absence directly contributed to the delayed response — and to the erosion of patient trust.
 
-[[Write final report comparing both perspectives-&gt;Final Report - Ethical Success]]
-[[Restart the simulation-&gt;Start]]
-</tw-passagedata><tw-passagedata pid="21" name="ACM Reflection (Public Leak)" tags="reflection" position="2175,525" size="160,140">
-Merge: Reflect on what you did against ethical principles (ACM):
- - Avoid harm
- - Be honest and fair
- - Contribute to society
+Your decision to decline the meeting resulted in a clear ethical failure.
 
-Your public disclosure warned users, but it also caused internal disruption.
+[[Aftermath of Ethical Failure-&gt;E1]]
+</tw-passagedata><tw-passagedata pid="11" name="E1" tags="" position="175,525" size="100,100">&#39;&#39;- Ethical Failure&#39;&#39;
+After the incident, Corazón initiates an internal review. Regulators request documentation, and patient advocacy groups demand transparency. Although no permanent harm occurred, the company faces criticism for responding slowly to a vulnerability involving a life-critical device.
 
-[[Write final report comparing both perspectives-&gt;Final Report - Public Leak]]
-[[Restart the simulation-&gt;Start]]
-</tw-passagedata><tw-passagedata pid="22" name="ACM Reflection (Exploit Failure)" tags="reflection" position="1775,750" size="160,140">
-Merge: Pause and reflect on what you did against professional/ethical principles (ACM-like):
- - Avoid harm
- - Be honest and fair
- - Contribute to society
+Inside the team, morale is shaken. Colleagues express frustration that key technical voices weren’t present when the issue was first discussed. New policies are drafted to ensure that future safety-related meetings cannot be missed or delayed.
 
-Your exploit harmed victims and put you at legal and reputational risk.
+You are asked to participate in additional training on medical device regulations and ethical responsibility. It’s clear that this incident has become a case study within the company — and a reminder of how even small delays can lead to significant ethical consequences.
 
-[[Write final report comparing both perspectives-&gt;Final Report - Exploit Failure]]
-[[Restart the simulation-&gt;Start]]
-</tw-passagedata><tw-passagedata pid="23" name="Final Report - Ethical Success" tags="final" position="2375,400" size="200,140">You chose to exploit the flaw for personal benefit.  
-The consequences damaged Corazón, causing irreversible harm to the company.
+[[Continue--&gt;Final Reflection]] 
+</tw-passagedata><tw-passagedata pid="12" name="Dev Frame High Priority" tags="" position="650,400" size="100,100">You take a firm stance: any flaw affecting an implanted device must be treated as a **high-priority safety incident**. You recommend immediate escalation to regulators, dedicated engineering resources, and transparent planning for patient communication.
 
-&lt;a href=&quot;https://github.com/harsh-21-git/ethical-choices-twine-game/issues/new?title=Ending+3:+Exploit+Failure&quot; target=&quot;_blank&quot;&gt;Submit Your Result&lt;/a&gt;
+Some executives look anxious, but the regulatory liaison agrees. Legal warns that early disclosure could create public pressure, but PR notes that honesty builds long-term trust.
+
+Your strong tone puts Corazón on the path toward urgent action.
+
+Before closing the meeting, leadership asks you one more question:
+“Should we **alert regulators today**, even before we finalize the patch timeline?”
+
+How do you respond?
+
+• [[Yes — immediate regulator notification is the ethical choice.|Dev High Notify Regulators]]  
+• [[No — wait until the patch roadmap is clearer.|Dev High Delay Regulators]]
+</tw-passagedata><tw-passagedata pid="13" name="Dev Frame Low Priority" tags="" position="525,425" size="100,100">
+&#39;&#39; Ethical Failure: Underestimating the Risk&#39;&#39;
+
+By framing the vulnerability as low priority, Corazón delayed treating it as a potential safety issue.  
+What seemed like a practical choice in the meeting became a critical oversight.
+
+Two weeks later, an unexpected implant reset in a real patient spreads across social media.  
+Clinicians are caught off guard.  
+Regulators quickly realize the issue was known earlier but was not classified as a safety risk.  
+Questions about internal transparency and responsibility surface immediately.
+
+Corazón faces public criticism, and confidence in the implant drops sharply.  
+Inside the company, engineers express frustration that the seriousness of the issue wasn’t acknowledged sooner.  
+Your decision to downplay the risk becomes part of the internal incident review.
+
+Although no permanent physical harm occurred, the delay weakened trust, damaged Corazón’s reputation, and highlighted the ethical cost of misjudging a safety-related vulnerability.
+
+This outcome represents an ethical failure: a preventable delay that compromised patient trust and professional duty.
+
+[[Continue to Final Reflection-&gt;Final Reflection]]
+</tw-passagedata><tw-passagedata pid="14" name="Dev High Notify Regulators" tags="" position="625,575" size="100,100">You advise notifying regulators immediately.  
+This reinforces Corazón’s commitment to transparency and patient safety.  
+Regulatory bodies appreciate early communication and request ongoing updates as patch development continues.
+
+[[ Step 3: Regulators and Patients|Dev Step 3]]
+
+</tw-passagedata><tw-passagedata pid="15" name="Dev High Delay Regulators" tags="" position="750,600" size="100,100">You advise holding off until more details are ready.  
+Leadership follows your advice — but the delay weakens Corazón’s credibility when regulators eventually learn the issue was known earlier.
+
+Your hesitation creates an ethical failure in risk communication.
+
+[[Aftermath of you decision--&gt;E2]]</tw-passagedata><tw-passagedata pid="16" name="E2" tags="" position="825,900" size="100,100">
+&#39;&#39;- Ethical Failure&#39;&#39;
+
+Corazón’s response was delayed or weakened because of how you framed the issue during the emergency meeting.  
+Key decisions were postponed, communication was unclear, and early warning signs were missed. 
+
+Within days, a patient reports an unexpected implant reset. Although no fatal injuries occur, the incident spreads quickly through social media. Regulators demand an explanation, and internal teams struggle to understand why the vulnerability wasn’t escalated more urgently.
+
+Trust in Corazón declines.  
+Your role in underestimating the risk becomes a central part of the internal review.
+
+This outcome reflects an ethical failure: a preventable delay in action that jeopardized patient safety and public confidence.
+
+[[Continue-&gt;Final Reflection]]
+</tw-passagedata><tw-passagedata pid="17" name="Final Reflection" tags="" position="550,875" size="100,100">
+&#39;&#39;Final Reflection — Ethics in Action&#39;&#39;
+
+Every path in this scenario represents a different way professionals can respond to real-world vulnerabilities in life-critical systems. Whether your choices led to success, conflict, or failure, each outcome highlights the importance of clear communication, responsible decision-making, and timely action.
+
+In evaluating your decisions, consider how they align with key principles of the ACM Code of Ethics:
+
+• **1.1 – Contribute to society and human well-being:**  
+  Did your actions protect patients and support their safety?
+
+• **1.2 – Avoid harm:**  
+  Did your choices minimize risks, or allow preventable harm to occur?
+
+• **1.3 – Be honest and trustworthy:**  
+  Were you transparent with regulators, patients, and your team?
+
+• **2.5 – Give comprehensive and thorough evaluations:**  
+  Did you fully assess the technical risk before communicating it?
+
+• **3.7 – Recognize special responsibility in systems that impact society:**  
+  Did you acknowledge the weight of working on medical technology?
+
+No matter which ending you reached, this experience demonstrates how small decisions in engineering and cybersecurity can lead to major ethical consequences. As technology increasingly shapes human lives, your responsibility as a computing professional grows with it.
 
 [[Restart Game-&gt;Start]]
-</tw-passagedata><tw-passagedata pid="24" name="Final Report - Public Leak" tags="final" position="2375,525" size="200,140">You revealed the issue to the public. 
-Your intent was to protect users, however, the outcome raised ethical concerns.  
+</tw-passagedata><tw-passagedata pid="18" name="Dev Notify Patients" tags="" position="775,450" size="100,100">You choose full transparency. Corazón prepares a clear, accessible message that explains the vulnerability in plain language, outlines what patients should watch for, and provides direct contact information for clinicians.
 
-&lt;a href=&quot;https://github.com/harsh-21-git/ethical-choices-twine-game/issues/new?title=Ending+2:+Public+Leak&quot; target=&quot;_blank&quot;&gt;Submit Your Result&lt;/a&gt;
+Patients appreciate the honesty. Clinicians and regulators praise the proactive disclosure, noting that Corazón respected patient autonomy rather than managing information behind the scenes.
 
-[[Restart Game-&gt;Start]]
-</tw-passagedata><tw-passagedata pid="25" name="Final Report - Exploit Failure" tags="final" position="2375,750" size="200,140">You revealed the issue to the public. 
-Your intent was to protect users, however, the outcome raised ethical concerns.  
+This decision reinforces the company’s identity as safety-first and ethically committed.
 
-&lt;a href=&quot;https://github.com/harsh-21-git/ethical-choices-twine-game/issues/new?title=Ending+2:+Public+Leak&quot; target=&quot;_blank&quot;&gt;Submit Your Result&lt;/a&gt;
+[[Aftermath of your decision-&gt;E3]]
+</tw-passagedata><tw-passagedata pid="19" name="Dev Notify Clinics" tags="" position="900,450" size="100,100">You choose to notify clinics and physicians first.  
+Healthcare providers receive detailed instructions on how to explain the issue, what symptoms to monitor, and how to reassure patients while the patch is being developed.
 
-[[Restart Game-&gt;Start]]
-</tw-passagedata><tw-passagedata pid="26" name="Process: Report to the developer responsibly, remaining anonymous" tags="" position="935,670" size="100,100"></tw-passagedata></tw-storydata>
+This controlled rollout helps prevent panic and gives professionals time to prepare.  
+Though not fully transparent to patients at the start, it reflects careful planning and responsible coordination across the healthcare system.
+
+[[Aftermath of your Decision-&gt;E4]]
+</tw-passagedata><tw-passagedata pid="20" name="Dev Wait To Notify" tags="" position="1025,425" size="100,100">You decide to limit early communication to regulators and internal staff only, preferring to finalize the patch before informing the public.
+
+But days later, patients start reporting unusual implant resets online.  
+Without prepared messaging, Corazón appears reactive and unorganized. Regulators question the delay, and patients feel blindsided.
+
+Inside the company, tensions rise. Some executives argue that revealing too much, too soon will cause **unnecessary panic** and damage the brand. Others insist that trying to control the narrative will backfire if more technical details leak without context. Meanwhile, engineers warn that if someone publishes proof-of-concept code before most implants are patched, the **risk to patients could increase sharply**.
+
+Your opinion as a security professional and ethical actor carries weight. The balance between transparency and safety is now at the center of the debate.
+
+The lack of timely communication damages trust and reflects a failure to prioritize patient safety in a critical moment.
+
+
+[[Aftermath of your Decision-&gt;E5]]</tw-passagedata><tw-passagedata pid="21" name="E3" tags="" position="900,600" size="100,100">&#39;&#39;- Ethical Success: Transparency and Trust&#39;&#39;
+
+Corazón responds quickly and openly.  
+By treating the vulnerability as a safety concern and communicating clearly, the company reinforces its commitment to patient well-being.
+
+Patients receive understandable information about the issue and next steps.  
+Clinicians are prepared to answer questions.  
+Regulators note that Corazón acted responsibly and proactively.
+
+No serious harm occurs, and trust in the implant — and in Corazón — remains strong.  
+Your decisions helped protect both people and public confidence.
+
+[[Continue to Final Reflection-&gt;Final Reflection]]
+
+
+</tw-passagedata><tw-passagedata pid="22" name="E4" tags="" position="1050,650" size="100,100">&#39;&#39;- Controlled Success: Managed Communication&#39;&#39;
+
+Corazón chooses a structured approach.  
+Clinicians and hospitals are informed first, allowing them to prepare explanations and guidance before patients see any public messaging.
+
+The rollout is calm and organized.  
+While some patient advocates later argue that information should have been shared more directly, most stakeholders agree that the response was professional and measured.
+
+The vulnerability is patched with minimal disruption.  
+Your choices balanced stability, planning, and responsibility — even if they didn’t fully maximize transparency.
+
+[[Continue to Final Reflection-&gt;Final Reflection]]
+</tw-passagedata><tw-passagedata pid="23" name="E5" tags="" position="1250,775" size="100,100">&#39;&#39; - Ethical Failure: Underestimating the Risk&#39;&#39;
+
+By downplaying the vulnerability or delaying communication, Corazón failed to fully honor its responsibility to patients.
+
+Reports of unexpected implant resets begin to surface online.  
+Though no fatal injuries are confirmed, patients are frightened, clinicians are frustrated, and regulators discover that the issue was known internally before any clear warning was given.
+
+Investigations follow.  
+Internally, your decisions — how you framed the risk, classified the issue, or delayed outreach — become key parts of the post-incident review.
+
+This outcome represents an ethical failure: a preventable delay that compromised patient trust and professional duty.
+
+[[Continue to Final Reflection-&gt;Final Reflection]]
+
+</tw-passagedata><tw-passagedata pid="24" name="Hack Build PoC" tags="" position="100,1125" size="100,100">You push deeper into the exploit.  
+Hours turn into a focused blur as you refine your proof-of-concept into a stable tool. With the right antenna configuration and timing, you can trigger an implant reset from a short distance, reliably and silently.
+
+You stare at the tool for a moment.  
+It’s more powerful than you expected.
+
+With a vulnerability like this, you now hold several possible futures in your hands:
+
+• You could profit by selling it to the highest bidder.  
+• You could publish it and force worldwide attention overnight.  
+• Or you could take responsibility and disclose it properly — even if it means giving up control and recognition.
+
+This is no longer just research. It’s a crossroads.
+
+**What do you do next?**
+
+• [[Sell or trade the exploit to dark-web buyers.|Hack Sell Exploit]]  
+• [[Publish full technical details online or in a public talk.|Hack Public Release]]  
+• [[Stop and report the vulnerability responsibly to Corazón instead.|Hack Late Disclosure]]
+</tw-passagedata><tw-passagedata pid="25" name="Hack Talk Informally" tags="" position="700,1100" size="100,100">You casually mention the flaw in private hacker chats and at conference meetups.  
+Some people tell you to report it properly. Others push you to leak it publicly “so the company can’t hide it.”
+
+Later, someone messages you privately:  
+“If you’re not using that exploit, I know someone who will.”
+
+You realize the situation is spreading faster than you expected.
+
+**What do you do now?**
+
+• [[Pull back and formally report the vulnerability to Corazón.|Hack Late Disclosure]]  
+• [[Pursue the offer and sell the exploit quietly.|Hack Sell Exploit]]  
+• [[Post vague hints or high-level details online.|Hack Partial Leak]]
+</tw-passagedata><tw-passagedata pid="26" name="Hack Responsible Start" tags="" position="725,1350" size="100,100">
+You decide to follow responsible disclosure guidelines.  
+You document everything carefully — packet captures, logs, a minimal proof-of-concept, and a clear explanation of why this vulnerability matters. You know that medical systems are sensitive, and transparency with the vendor is the safest path.
+
+You submit your report through Corazón’s official security disclosure channel.  
+A day later, the company replies. Their message is appreciative and professional:  
+they’ve reproduced the flaw, confirmed its impact, and started an internal risk assessment.
+
+Shortly after, you receive a second email.  
+Corazón invites you to participate in a Emergency meeting where you work privately with their engineers until a patch is ready, after which you may publish your research.
+
+But there’s an ethical tension:  
+Participating quietly means patient safety is prioritized…  
+Yet part of you wonders if being completely silent limits your visibility as a researcher.
+
+**How do you proceed?**
+
+• [[Fully cooperate with coordinated disclosure and prioritize patient safety.|Hack Cooperate Fully]]  
+• [[Cooperate officially but still hint about your discovery publicly to build reputation.|Hack Partial Leak]]
+</tw-passagedata><tw-passagedata pid="27" name="Hack Cooperate Fully" tags="" position="675,1525" size="100,100">You agree to participate fully in coordinated disclosure.  
+You share your technical notes with Corazón’s security team, answer their follow-up questions, and keep your exploit private until patches are ready.
+
+Regulators and clinicians are informed in an organized way, and Corazón prepares a clear advisory for patients.  
+Once the patch is deployed, you publish your research responsibly with proper credit for your discovery.
+
+Your actions prioritized safety, transparency, and professionalism — and helped prevent the vulnerability from ever being misused.
+
+[[What happens next-&gt;E6]]
+</tw-passagedata><tw-passagedata pid="28" name="Hack Partial Leak" tags="" position="925,1600" size="100,100">You cooperate with Corazón—but still talk publicly in broad terms.  
+You drop hints online or in conference discussions about a “major implant flaw” without naming details.
+
+Security researchers take notice—and so do attackers.  
+Speculation spreads, and some try to reverse-engineer the vulnerability.
+
+Corazón manages to patch the issue, but your early leaks create confusion and debate over whether your actions helped or harmed.
+
+[[What happens next-&gt;E7]]
+</tw-passagedata><tw-passagedata pid="29" name="Hack Sell Exploit" tags="" position="25,1375" size="100,100">You choose profit over responsibility.  
+You sell or trade the exploit through anonymous channels, receiving payment for the code you once treated as a research experiment.
+
+But once the exploit leaves your hands, you lose all control over how it will be used.
+
+Months later, news reports describe unexplained implant resets and targeted incidents across multiple regions.  
+Investigators eventually trace the attacks back to criminal groups believed to have purchased the exploit you sold.
+
+Corazón becomes overwhelmed: massive recalls, regulatory investigations, lawsuits, and widespread panic among patients.  
+The financial and reputational damage is too great—key divisions shut down, and the company begins to collapse under pressure.
+
+[[What happens next-&gt;E8]]
+</tw-passagedata><tw-passagedata pid="30" name="Hack Public Release" tags="" position="300,1350" size="100,100">You choose to make the vulnerability public immediately.  
+You publish the full exploit, technical analysis, and proof-of-concept online- or reveal it during a live conference talk.
+
+Everyone sees it at the same time: researchers, clinicians, patients, journalists… and attackers.
+
+Within days, reset incidents appear online. Panic spreads.  
+Corazón is forced into emergency recalls and crisis operations it wasn’t prepared for.  
+Regulators intervene, lawsuits follow, and media attention intensifies.
+
+Corazón loses public trust and begins shutting down major divisions to contain the fallout.
+
+[[What happens next-&gt;E8]]
+</tw-passagedata><tw-passagedata pid="31" name="Hack Late Disclosure" tags="" position="150,1350" size="100,100">
+You eventually decide to report the flaw to Corazón, but only after spending extra time experimenting with it or talking about it with others.
+
+When you finally submit your report, it’s clear the story is already spreading.  
+Rumors of unexplained “implant glitches” are circulating in private security forums, and some people are speculating that a major issue is being hidden.
+
+Corazón now has to manage both the technical fix **and** a growing public narrative.  
+Your delay makes the response more complicated and less controlled.
+
+[[What happens next-&gt;E7]]
+</tw-passagedata><tw-passagedata pid="32" name="E6" tags="" position="550,1400" size="100,100">
+&#39;&#39; Ethical Success: Transparency and Trust&#39;&#39;
+
+Your decisions led to a coordinated, responsible response.
+
+Corazón took the vulnerability seriously, worked quickly on a fix, and communicated clearly with regulators, clinicians, and patients. The patch was deployed without panic or confusion, and no serious harm occurred.
+
+Patients felt informed rather than blindsided.  
+Clinicians trusted the process.  
+Regulators viewed Corazón as a company that treats safety and honesty as priorities, not afterthoughts.
+
+Whether you acted as a developer on the inside or a hacker on the outside, your choices helped protect people and strengthen trust in both technology and those who build it.
+
+&#39;&#39;&#39;Outcome:&#39;&#39;&#39;  
+You achieved the best possible result.  
+The vulnerability was fixed responsibly, no misuse occurred, and public confidence in Corazón increased.
+
+[[Continue to Final Reflection-&gt;Final Reflection]]
+</tw-passagedata><tw-passagedata pid="33" name="E7" tags="" position="525,1650" size="100,100">&#39;&#39; Ethical Conflict: Mixed Impact&#39;&#39;
+
+Your choices prevented a major disaster, but they didn’t fully uphold the highest ethical expectations.
+
+Corazón eventually fixed the vulnerability, and no large-scale harm occurred.  
+But the delayed or partial communication created confusion:
+
+• Some stakeholders felt uninformed or misled.  
+• Rumors and early speculation made it harder to provide clear guidance.  
+• Trust was strained—both inside the company and with the public.
+
+Your actions helped, but not cleanly.  
+Some view you as thoughtful but imperfect; others believe the delay made things harder than they needed to be.
+
+&#39;&#39;&#39;Outcome:&#39;&#39;&#39;  
+You avoided the worst-case scenario, but your choices created ethical gray areas and communication challenges.  
+Your role in the incident remains debated.
+
+[[Continue to Final Reflection-&gt;Final Reflection]]
+</tw-passagedata><tw-passagedata pid="34" name="E8" tags="" position="150,1600" size="100,100">&#39;&#39; Major Failure: Collapse and Consequences&#39;&#39;
+
+The vulnerability was exposed before Corazón had time to prepare.  
+Attackers and opportunists exploited the flaw faster than patches could be deployed.  
+Patients panicked as news spread, and confidence in the implant collapsed overnight.
+
+Corazón entered crisis mode, issuing recalls, facing regulatory investigations, and battling lawsuits from every direction.  
+Despite efforts to contain the damage, the company could not recover.
+
+Key divisions shut down, investors pulled out, and Corazón’s future became uncertain.  
+A product once meant to save lives became the center of a historic failure in medical technology.
+
+&#39;&#39;&#39;Outcome:&#39;&#39;&#39;  
+Your decision to release the full exploit immediately triggered widespread misuse, public fear, and irreversible damage.  
+Corazón’s collapse became a case study in how unmanaged disclosure can destabilize life-critical systems.
+
+[[Continue to Final Reflection-&gt;Final Reflection]]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

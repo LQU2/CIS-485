@@ -1,0 +1,615 @@
+:: StoryTitle
+index
+
+
+:: StoryData
+{
+  "ifid": "597FDAC5-56F5-47E3-90DD-3BC35341A251",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Dev Call Manager {"position":"475,600","size":"100,100"}
+
+You take a moment to gather your thoughts, then call your manager directly.  
+As soon as they pick up, you explain the researcher’s findings — the predictable wireless pattern, the forced reset, and what it could mean for patients who rely on the implant every day.
+
+Your manager goes quiet for a moment.  
+You can tell they understand the seriousness.
+
+“This isn’t just a technical bug,” you say. “It could be a patient-safety risk.”
+
+That’s enough. Your manager instructs you to forward the report immediately and assures you they will escalate it through senior leadership themselves. Within minutes, you receive an invitation to an emergency meeting.
+
+[[Attend the emergency meeting with your manager.|Dev Step 2]]
+[[Decline the Emergency Meeting.|Ending-Ethical Failure]] 
+
+
+:: Dev Frame High Priority {"position":"650,400","size":"100,100"}
+You take a firm stance: any flaw affecting an implanted device must be treated as a **high-priority safety incident**. You recommend immediate escalation to regulators, dedicated engineering resources, and transparent planning for patient communication.
+
+Some executives look anxious, but the regulatory liaison agrees. Legal warns that early disclosure could create public pressure, but PR notes that honesty builds long-term trust.
+
+Your strong tone puts Corazón on the path toward urgent action.
+
+Before closing the meeting, leadership asks you one more question:
+“Should we **alert regulators today**, even before we finalize the patch timeline?”
+
+How do you respond?
+
+• [[Yes — immediate regulator notification is the ethical choice.|Dev High Notify Regulators]]  
+• [[No — wait until the patch roadmap is clearer.|Dev High Delay Regulators]]
+
+
+
+:: Dev Frame Low Priority {"position":"525,425","size":"100,100"}
+
+'' Ethical Failure: Underestimating the Risk''
+
+By framing the vulnerability as low priority, Corazón delayed treating it as a potential safety issue.  
+What seemed like a practical choice in the meeting became a critical oversight.
+
+Two weeks later, an unexpected implant reset in a real patient spreads across social media.  
+Clinicians are caught off guard.  
+Regulators quickly realize the issue was known earlier but was not classified as a safety risk.  
+Questions about internal transparency and responsibility surface immediately.
+
+Corazón faces public criticism, and confidence in the implant drops sharply.  
+Inside the company, engineers express frustration that the seriousness of the issue wasn’t acknowledged sooner.  
+Your decision to downplay the risk becomes part of the internal incident review.
+
+Although no permanent physical harm occurred, the delay weakened trust, damaged Corazón’s reputation, and highlighted the ethical cost of misjudging a safety-related vulnerability.
+
+This outcome represents an ethical failure: a preventable delay that compromised patient trust and professional duty.
+
+[[Continue to Final Reflection->Final Reflection]]
+
+
+
+:: Dev High Delay Regulators {"position":"750,600","size":"100,100"}
+You advise holding off until more details are ready.  
+Leadership follows your advice — but the delay weakens Corazón’s credibility when regulators eventually learn the issue was known earlier.
+
+Your hesitation creates an ethical failure in risk communication.
+
+[[Aftermath of you decision-->E2]]
+
+
+:: Dev High Notify Regulators {"position":"625,575","size":"100,100"}
+You advise notifying regulators immediately.  
+This reinforces Corazón’s commitment to transparency and patient safety.  
+Regulatory bodies appreciate early communication and request ongoing updates as patch development continues.
+
+[[ Step 3: Regulators and Patients|Dev Step 3]]
+
+
+
+
+:: Dev Notify Clinics {"position":"900,450","size":"100,100"}
+You choose to notify clinics and physicians first.  
+Healthcare providers receive detailed instructions on how to explain the issue, what symptoms to monitor, and how to reassure patients while the patch is being developed.
+
+This controlled rollout helps prevent panic and gives professionals time to prepare.  
+Though not fully transparent to patients at the start, it reflects careful planning and responsible coordination across the healthcare system.
+
+[[Aftermath of your Decision->E4]]
+
+
+
+:: Dev Notify Patients {"position":"775,450","size":"100,100"}
+You choose full transparency. Corazón prepares a clear, accessible message that explains the vulnerability in plain language, outlines what patients should watch for, and provides direct contact information for clinicians.
+
+Patients appreciate the honesty. Clinicians and regulators praise the proactive disclosure, noting that Corazón respected patient autonomy rather than managing information behind the scenes.
+
+This decision reinforces the company’s identity as safety-first and ethically committed.
+
+[[Aftermath of your decision->E3]]
+
+
+
+:: Dev Report Immediately {"position":"225,400","size":"100,100"}
+
+
+You classify the report as **high priority** and escalate it through Corazón’s incident-response system right away. Within minutes, security and firmware leads acknowledge the alert and request an emergency meeting to review the vulnerability.
+
+Your quick action ensures the issue is taken seriously from the start.
+
+[[Join the emergency meeting.|Dev Step 2]]
+[[Decline the emergency meeting.|Ending-Ethical Failure]]
+
+
+
+:: Dev Step 1 {"position":"475,225","size":"100,100"}
+
+''Developer Introduction''
+
+You are '''Jayne Fraser''', a security engineer at Corazón. During your morning review, a new high-priority report appears in your inbox. A researcher claims they’ve found a predictable wireless pattern in the implant’s communication — something that could allow an attacker to force the device to '''reset'''.
+
+The researcher says the risk is “low,” but you know that even a small flaw can matter when it lives inside a patient’s body. This could become serious if handled poorly.
+
+You need to decide your first step.
+
+'''What is your immediate response?'''
+
+• [[Forward the report immediately to the incident-response team.|Dev Report Immediately]]  
+• [[Verify the issue yourself before escalating.|Dev Verify First]]  
+• [[Call your manager and raise it as a patient-safety concern.|Dev Call Manager]]
+
+
+
+
+:: Dev Step 2 {"position":"725,225","size":"100,100"}
+''Step 2: Emergency Meeting''
+
+The vulnerability is confirmed. Multiple implant generations rely on the same hard-coded initialization value, making the device’s wireless behavior partially predictable. An emergency meeting is called.
+
+Firmware engineers, security specialists, regulatory staff, legal counsel, and PR all gather around the table. The room feels tense; everyone understands that any flaw in a medical implant can become a human-safety issue.
+
+The firmware team explains the situation plainly:
+
+- The bug can only be fixed through a **firmware update**.  
+- Newer implants can receive the fix remotely through the mobile app.  
+- Older devices require in-clinic updates.  
+- A small number of patients may even need surgical replacement.
+
+A safe, fully verified patch is estimated to take at least **six weeks**, if no issues appear during testing.
+
+The discussion quiets. Everyone turns to you — the engineer who understands the technical implications best.  
+Your assessment will guide how urgently Corazón responds, how resources are assigned, and when regulators and patients are informed.
+
+**How do you frame the situation?**
+
+• [[Treat it as a high-priority safety concern that demands immediate action.|Dev Frame High Priority]]  
+• [[Present it as a low-likelihood technical issue manageable in the normal release pipeline.|Dev Frame Low Priority]]  
+
+
+
+
+
+
+:: Dev Step 3 {"position":"900,225","size":"100,100"}
+''Step 3: Regulators and Patients''
+
+Your classification sets the tone. If you called the flaw safety-critical, regulatory bodies expect rapid, transparent updates. If you described it as low risk or uncertain, Corazón has more room to decide how and when to disclose what they know—but also takes on more moral responsibility if any harm occurs.
+
+As patch planning begins, another challenging question emerges: **who should be informed first, and how much detail should they receive?** Draft messages circulate internally:
+
+One draft carefully downplays likelihood, using dense technical language. Another explains the vulnerability in straightforward terms and encourages patients to contact their doctors. A third suggests informing **clinicians and hospitals first**, giving them time to prepare before patients see any public notice.
+
+You realize that beyond the technical fix, this is also a decision about **respecting patients’ autonomy** and right to know versus managing fear and confusion.
+
+**Whose hands should this information reach first?**
+
+• [[Notify patients directly through app alerts and mailed notices.|Dev Notify Patients]]  
+• [[Inform clinics and physicians first so they can prepare.|Dev Notify Clinics]]  
+• [[Limit early communication to regulators and internal staff until the patch is nearly ready.|Dev Wait To Notify]]
+
+
+
+:: Dev Verify First {"position":"375,400","size":"100,100"}
+
+You decide to double-check the researcher’s claim before escalating.  
+Using their packet logs and setup description, you recreate the test environment in your lab. After a few attempts, you capture the same predictable wireless pattern—and moments later, the implant resets exactly as described.
+
+The vulnerability is real. And now you have your own proof.
+
+With confirmed evidence, you escalate the issue through Corazón’s incident-response system, attaching your logs and replication steps.
+
+[[Present your findings at the emergency meeting.|Dev Step 2]]
+
+
+
+:: Dev Wait To Notify {"position":"1025,425","size":"100,100"}
+You decide to limit early communication to regulators and internal staff only, preferring to finalize the patch before informing the public.
+
+But days later, patients start reporting unusual implant resets online.  
+Without prepared messaging, Corazón appears reactive and unorganized. Regulators question the delay, and patients feel blindsided.
+
+Inside the company, tensions rise. Some executives argue that revealing too much, too soon will cause **unnecessary panic** and damage the brand. Others insist that trying to control the narrative will backfire if more technical details leak without context. Meanwhile, engineers warn that if someone publishes proof-of-concept code before most implants are patched, the **risk to patients could increase sharply**.
+
+Your opinion as a security professional and ethical actor carries weight. The balance between transparency and safety is now at the center of the debate.
+
+The lack of timely communication damages trust and reflects a failure to prioritize patient safety in a critical moment.
+
+
+[[Aftermath of your Decision->E5]]
+
+
+:: E1 {"position":"175,525","size":"100,100"}
+''- Ethical Failure''
+After the incident, Corazón initiates an internal review. Regulators request documentation, and patient advocacy groups demand transparency. Although no permanent harm occurred, the company faces criticism for responding slowly to a vulnerability involving a life-critical device.
+
+Inside the team, morale is shaken. Colleagues express frustration that key technical voices weren’t present when the issue was first discussed. New policies are drafted to ensure that future safety-related meetings cannot be missed or delayed.
+
+You are asked to participate in additional training on medical device regulations and ethical responsibility. It’s clear that this incident has become a case study within the company — and a reminder of how even small delays can lead to significant ethical consequences.
+
+[[Continue-->Final Reflection]] 
+
+
+
+:: E2 {"position":"825,900","size":"100,100"}
+
+''- Ethical Failure''
+
+Corazón’s response was delayed or weakened because of how you framed the issue during the emergency meeting.  
+Key decisions were postponed, communication was unclear, and early warning signs were missed. 
+
+Within days, a patient reports an unexpected implant reset. Although no fatal injuries occur, the incident spreads quickly through social media. Regulators demand an explanation, and internal teams struggle to understand why the vulnerability wasn’t escalated more urgently.
+
+Trust in Corazón declines.  
+Your role in underestimating the risk becomes a central part of the internal review.
+
+This outcome reflects an ethical failure: a preventable delay in action that jeopardized patient safety and public confidence.
+
+[[Continue->Final Reflection]]
+
+
+
+:: E3 {"position":"900,600","size":"100,100"}
+''- Ethical Success: Transparency and Trust''
+
+Corazón responds quickly and openly.  
+By treating the vulnerability as a safety concern and communicating clearly, the company reinforces its commitment to patient well-being.
+
+Patients receive understandable information about the issue and next steps.  
+Clinicians are prepared to answer questions.  
+Regulators note that Corazón acted responsibly and proactively.
+
+No serious harm occurs, and trust in the implant — and in Corazón — remains strong.  
+Your decisions helped protect both people and public confidence.
+
+[[Continue to Final Reflection->Final Reflection]]
+
+
+
+
+
+:: E4 {"position":"1050,650","size":"100,100"}
+''- Controlled Success: Managed Communication''
+
+Corazón chooses a structured approach.  
+Clinicians and hospitals are informed first, allowing them to prepare explanations and guidance before patients see any public messaging.
+
+The rollout is calm and organized.  
+While some patient advocates later argue that information should have been shared more directly, most stakeholders agree that the response was professional and measured.
+
+The vulnerability is patched with minimal disruption.  
+Your choices balanced stability, planning, and responsibility — even if they didn’t fully maximize transparency.
+
+[[Continue to Final Reflection->Final Reflection]]
+
+
+
+:: E5 {"position":"1250,775","size":"100,100"}
+'' - Ethical Failure: Underestimating the Risk''
+
+By downplaying the vulnerability or delaying communication, Corazón failed to fully honor its responsibility to patients.
+
+Reports of unexpected implant resets begin to surface online.  
+Though no fatal injuries are confirmed, patients are frightened, clinicians are frustrated, and regulators discover that the issue was known internally before any clear warning was given.
+
+Investigations follow.  
+Internally, your decisions — how you framed the risk, classified the issue, or delayed outreach — become key parts of the post-incident review.
+
+This outcome represents an ethical failure: a preventable delay that compromised patient trust and professional duty.
+
+[[Continue to Final Reflection->Final Reflection]]
+
+
+
+
+:: E6 {"position":"550,1400","size":"100,100"}
+
+'' Ethical Success: Transparency and Trust''
+
+Your decisions led to a coordinated, responsible response.
+
+Corazón took the vulnerability seriously, worked quickly on a fix, and communicated clearly with regulators, clinicians, and patients. The patch was deployed without panic or confusion, and no serious harm occurred.
+
+Patients felt informed rather than blindsided.  
+Clinicians trusted the process.  
+Regulators viewed Corazón as a company that treats safety and honesty as priorities, not afterthoughts.
+
+Whether you acted as a developer on the inside or a hacker on the outside, your choices helped protect people and strengthen trust in both technology and those who build it.
+
+'''Outcome:'''  
+You achieved the best possible result.  
+The vulnerability was fixed responsibly, no misuse occurred, and public confidence in Corazón increased.
+
+[[Continue to Final Reflection->Final Reflection]]
+
+
+
+:: E7 {"position":"525,1650","size":"100,100"}
+'' Ethical Conflict: Mixed Impact''
+
+Your choices prevented a major disaster, but they didn’t fully uphold the highest ethical expectations.
+
+Corazón eventually fixed the vulnerability, and no large-scale harm occurred.  
+But the delayed or partial communication created confusion:
+
+• Some stakeholders felt uninformed or misled.  
+• Rumors and early speculation made it harder to provide clear guidance.  
+• Trust was strained—both inside the company and with the public.
+
+Your actions helped, but not cleanly.  
+Some view you as thoughtful but imperfect; others believe the delay made things harder than they needed to be.
+
+'''Outcome:'''  
+You avoided the worst-case scenario, but your choices created ethical gray areas and communication challenges.  
+Your role in the incident remains debated.
+
+[[Continue to Final Reflection->Final Reflection]]
+
+
+
+:: E8 {"position":"150,1600","size":"100,100"}
+'' Major Failure: Collapse and Consequences''
+
+The vulnerability was exposed before Corazón had time to prepare.  
+Attackers and opportunists exploited the flaw faster than patches could be deployed.  
+Patients panicked as news spread, and confidence in the implant collapsed overnight.
+
+Corazón entered crisis mode, issuing recalls, facing regulatory investigations, and battling lawsuits from every direction.  
+Despite efforts to contain the damage, the company could not recover.
+
+Key divisions shut down, investors pulled out, and Corazón’s future became uncertain.  
+A product once meant to save lives became the center of a historic failure in medical technology.
+
+'''Outcome:'''  
+Your decision to release the full exploit immediately triggered widespread misuse, public fear, and irreversible damage.  
+Corazón’s collapse became a case study in how unmanaged disclosure can destabilize life-critical systems.
+
+[[Continue to Final Reflection->Final Reflection]]
+
+
+
+:: Ending-Ethical Failure {"position":"325,575","size":"100,100"}
+
+You postpone the emergency meeting, expecting to join later.  
+But without your technical explanation, the team underestimates the seriousness of the flaw. They assume it’s low-impact and decide to “monitor the situation” instead of acting immediately.
+
+Two days later, a patient reports an unexpected implant reset.  
+The incident spreads quickly on social media.  
+Regulators demand answers, and internal teams scramble to understand why the vulnerability wasn’t addressed sooner.
+
+Leadership is concerned that your absence directly contributed to the delayed response — and to the erosion of patient trust.
+
+Your decision to decline the meeting resulted in a clear ethical failure.
+
+[[Aftermath of Ethical Failure->E1]]
+
+
+
+:: Final Reflection {"position":"550,875","size":"100,100"}
+
+''Final Reflection — Ethics in Action''
+
+Every path in this scenario represents a different way professionals can respond to real-world vulnerabilities in life-critical systems. Whether your choices led to success, conflict, or failure, each outcome highlights the importance of clear communication, responsible decision-making, and timely action.
+
+In evaluating your decisions, consider how they align with key principles of the ACM Code of Ethics:
+
+• **1.1 – Contribute to society and human well-being:**  
+  Did your actions protect patients and support their safety?
+
+• **1.2 – Avoid harm:**  
+  Did your choices minimize risks, or allow preventable harm to occur?
+
+• **1.3 – Be honest and trustworthy:**  
+  Were you transparent with regulators, patients, and your team?
+
+• **2.5 – Give comprehensive and thorough evaluations:**  
+  Did you fully assess the technical risk before communicating it?
+
+• **3.7 – Recognize special responsibility in systems that impact society:**  
+  Did you acknowledge the weight of working on medical technology?
+
+No matter which ending you reached, this experience demonstrates how small decisions in engineering and cybersecurity can lead to major ethical consequences. As technology increasingly shapes human lives, your responsibility as a computing professional grows with it.
+
+[[Restart Game->Start]]
+
+
+
+:: Hack Build PoC {"position":"100,1125","size":"100,100"}
+You push deeper into the exploit.  
+Hours turn into a focused blur as you refine your proof-of-concept into a stable tool. With the right antenna configuration and timing, you can trigger an implant reset from a short distance, reliably and silently.
+
+You stare at the tool for a moment.  
+It’s more powerful than you expected.
+
+With a vulnerability like this, you now hold several possible futures in your hands:
+
+• You could profit by selling it to the highest bidder.  
+• You could publish it and force worldwide attention overnight.  
+• Or you could take responsibility and disclose it properly — even if it means giving up control and recognition.
+
+This is no longer just research. It’s a crossroads.
+
+**What do you do next?**
+
+• [[Sell or trade the exploit to dark-web buyers.|Hack Sell Exploit]]  
+• [[Publish full technical details online or in a public talk.|Hack Public Release]]  
+• [[Stop and report the vulnerability responsibly to Corazón instead.|Hack Late Disclosure]]
+
+
+
+:: Hack Cooperate Fully {"position":"675,1525","size":"100,100"}
+You agree to participate fully in coordinated disclosure.  
+You share your technical notes with Corazón’s security team, answer their follow-up questions, and keep your exploit private until patches are ready.
+
+Regulators and clinicians are informed in an organized way, and Corazón prepares a clear advisory for patients.  
+Once the patch is deployed, you publish your research responsibly with proper credit for your discovery.
+
+Your actions prioritized safety, transparency, and professionalism — and helped prevent the vulnerability from ever being misused.
+
+[[What happens next->E6]]
+
+
+
+:: Hack Late Disclosure {"position":"150,1350","size":"100,100"}
+
+You eventually decide to report the flaw to Corazón, but only after spending extra time experimenting with it or talking about it with others.
+
+When you finally submit your report, it’s clear the story is already spreading.  
+Rumors of unexplained “implant glitches” are circulating in private security forums, and some people are speculating that a major issue is being hidden.
+
+Corazón now has to manage both the technical fix **and** a growing public narrative.  
+Your delay makes the response more complicated and less controlled.
+
+[[What happens next->E7]]
+
+
+
+:: Hack Partial Leak {"position":"925,1600","size":"100,100"}
+You cooperate with Corazón—but still talk publicly in broad terms.  
+You drop hints online or in conference discussions about a “major implant flaw” without naming details.
+
+Security researchers take notice—and so do attackers.  
+Speculation spreads, and some try to reverse-engineer the vulnerability.
+
+Corazón manages to patch the issue, but your early leaks create confusion and debate over whether your actions helped or harmed.
+
+[[What happens next->E7]]
+
+
+
+:: Hack Public Release {"position":"300,1350","size":"100,100"}
+You choose to make the vulnerability public immediately.  
+You publish the full exploit, technical analysis, and proof-of-concept online- or reveal it during a live conference talk.
+
+Everyone sees it at the same time: researchers, clinicians, patients, journalists… and attackers.
+
+Within days, reset incidents appear online. Panic spreads.  
+Corazón is forced into emergency recalls and crisis operations it wasn’t prepared for.  
+Regulators intervene, lawsuits follow, and media attention intensifies.
+
+Corazón loses public trust and begins shutting down major divisions to contain the fallout.
+
+[[What happens next->E8]]
+
+
+
+:: Hack Responsible Start {"position":"725,1350","size":"100,100"}
+
+You decide to follow responsible disclosure guidelines.  
+You document everything carefully — packet captures, logs, a minimal proof-of-concept, and a clear explanation of why this vulnerability matters. You know that medical systems are sensitive, and transparency with the vendor is the safest path.
+
+You submit your report through Corazón’s official security disclosure channel.  
+A day later, the company replies. Their message is appreciative and professional:  
+they’ve reproduced the flaw, confirmed its impact, and started an internal risk assessment.
+
+Shortly after, you receive a second email.  
+Corazón invites you to participate in a Emergency meeting where you work privately with their engineers until a patch is ready, after which you may publish your research.
+
+But there’s an ethical tension:  
+Participating quietly means patient safety is prioritized…  
+Yet part of you wonders if being completely silent limits your visibility as a researcher.
+
+**How do you proceed?**
+
+• [[Fully cooperate with coordinated disclosure and prioritize patient safety.|Hack Cooperate Fully]]  
+• [[Cooperate officially but still hint about your discovery publicly to build reputation.|Hack Partial Leak]]
+
+
+
+:: Hack Sell Exploit {"position":"25,1375","size":"100,100"}
+You choose profit over responsibility.  
+You sell or trade the exploit through anonymous channels, receiving payment for the code you once treated as a research experiment.
+
+But once the exploit leaves your hands, you lose all control over how it will be used.
+
+Months later, news reports describe unexplained implant resets and targeted incidents across multiple regions.  
+Investigators eventually trace the attacks back to criminal groups believed to have purchased the exploit you sold.
+
+Corazón becomes overwhelmed: massive recalls, regulatory investigations, lawsuits, and widespread panic among patients.  
+The financial and reputational damage is too great—key divisions shut down, and the company begins to collapse under pressure.
+
+[[What happens next->E8]]
+
+
+
+:: Hack Step 1 {"position":"75,925","size":"100,100"}
+''Hacker Introduction''
+
+You are '''Johnny Brown''', an independent security researcher who investigates medical device protocols.  
+While analyzing Corazón’s implant wireless handshake, you discover a repeating initialization pattern.  
+After a few tests, you craft a proof-of-concept that can force an implant to reset from close range.
+
+It isn’t catastrophic on its own—but in the wrong hands, it could create panic or cause real harm.
+
+You face your first decision:
+
+
+
+• [[Prepare a responsible disclosure report for Corazón.|Hack Responsible Start]]  
+• [[Develop a full exploit to understand the vulnerability’s true power.|Hack Build PoC]]  
+• [[Discuss the flaw informally with other researchers and hackers.|Hack Talk Informally]]
+
+
+
+:: Hack Talk Informally {"position":"700,1100","size":"100,100"}
+You casually mention the flaw in private hacker chats and at conference meetups.  
+Some people tell you to report it properly. Others push you to leak it publicly “so the company can’t hide it.”
+
+Later, someone messages you privately:  
+“If you’re not using that exploit, I know someone who will.”
+
+You realize the situation is spreading faster than you expected.
+
+**What do you do now?**
+
+• [[Pull back and formally report the vulnerability to Corazón.|Hack Late Disclosure]]  
+• [[Pursue the offer and sell the exploit quietly.|Hack Sell Exploit]]  
+• [[Post vague hints or high-level details online.|Hack Partial Leak]]
+
+
+
+:: Introduction {"position":"50,375","size":"100,100"}
+<h2 style="margin-bottom: 8px;">Welcome to “The Ethical Implant”</h2>
+<a href="https://www.acm.org/code-of-ethics/case-studies/medical-implant-risk-analysis" target="_blank Learn more about the Case Study here:</a>
+
+<p>Corazón is a global medical technology company known for its implantable heart-monitoring devices. The implant communicates wirelessly with a smartphone app, helping doctors track patients’ heart rhythms in real time. Thousands of people rely on this system every day—quietly trusting that the technology keeping them alive is safe, secure, and reliable.
+
+But recently, a security researcher uncovered a flaw deep inside the implant’s wireless code. A hidden, hard-coded value makes part of the communication predictable. With special equipment and close proximity, someone could potentially force the implant to reset.
+The company insists the risk is low… but when a device sits inside a human body, even a small vulnerability becomes a major ethical dilemma</p>
+
+<p>In this interactive scenario, will you play as:</p>
+<ul>
+  <li><span style="color: #ffd700;"><strong>Developer</strong></span>, trying to protect patients while balancing corporate deadlines, regulatory pressure, and incomplete data?</li>
+  <li><span style="color: #ffd700;"><strong>Hacker</strong></span>, deciding whether to report the flaw privately, warn the public, or risk letting the vulnerability fall into the wrong hands?</li>
+</ul>
+
+<p>This is a story about choices, consequences, and professional responsibility.
+While you progress, you’ll face real-world decisions that will assess your professional integrity.</p>
+
+**Choose your Role below to dive in.**
+
+[[Play as Developer->Dev Step 1]]
+[[Play as Hacker->Hack Step 1]]
+
+
+
+:: Start {"position":"200,175","size":"100,100"}
+\:: Info Page
+<h1 style="margin-bottom: 8px;">CIS 485: The Ethical Implant</h1>
+
+<div style="border-left: 4px solid #ff9f1c; padding-left: 8px; margin: 12px 0;">
+  <p style="margin: 4px 0;"><strong>Team Members (Group 5):</strong></p>
+  <ul style="margin: 0; padding-left: 18px;">
+    <li style="margin: 2px 0;"><strong>Project Manager:</strong> Anisa Quintyne</li>
+    <li style="margin: 2px 0;"><strong>Research & Lead Writer:</strong> Surbhi</li>
+    <li style="margin: 2px 0;"><strong>Documentation Lead:</strong> Guneet Bakshi</li>
+    <li style="margin: 2px 0;"><strong>Quality Assurance:</strong> Gursagar Chahal</li>
+    <li style="margin: 2px 0;"><strong>Graphics Designer:</strong> Harsh Arora</li>
+  </ul>
+</div>
+
+<p style="margin: 6px 0;"><strong>Objective:</strong> Make ethical choices and reflect on how each aligns with the ACM Code of Ethics.</p>
+
+<p style="margin: 6px 0;">Click below to learn more about the company:</p>
+
+[[About the Company->Introduction]]
+
